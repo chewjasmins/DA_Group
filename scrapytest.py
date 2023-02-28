@@ -4,7 +4,7 @@ import scrapy
 
 class NewSpider(scrapy.Spider):
     name = "new_spider"
-    start_urls = ['http://172.18.58.80/index.html']
+    start_urls = ['http://172.18.58.80/creative/']
 
     def parse(self, response):
         css_selector = 'img'
