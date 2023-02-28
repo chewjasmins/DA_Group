@@ -1,5 +1,3 @@
-# Lab 10c
-
 # Use the Scrapy library
 import scrapy
 
@@ -20,7 +18,3 @@ class NewSpider(scrapy.Spider):
         if next_page:
             yield scrapy.Request(response.urljoin(next_page), callback=self.parse)
 
-# Test scrapytest.py
-#   Terminal: scrapy runspider scrapytest.py
-# Save the output to a file results.json
-#   Terminal: scrapy runspider scrapytest.py -o results.json -t json
